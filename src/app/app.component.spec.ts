@@ -1,5 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 
+import { HttpModule } from '@angular/http';
+
 import { DataModule } from './modules/data/data.module';
 import { ListModule } from './modules/list/list.module';
 import { CoreModule } from './modules/core/core.module';
@@ -16,7 +18,8 @@ describe('AppComponent', () => {
       imports: [
         DataModule,
         ListModule,
-        CoreModule
+        CoreModule,
+        HttpModule
       ],
     }).compileComponents();
   }));
