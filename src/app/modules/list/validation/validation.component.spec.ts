@@ -1,4 +1,14 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { DataModule } from '../../data/data.module';
+
+import {
+  HttpModule,
+  Http,
+  Response,
+  ResponseOptions,
+  XHRBackend
+} from '@angular/http';
+
 
 import { ValidationComponent } from './validation.component';
 
@@ -8,7 +18,8 @@ describe('ValidationComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ValidationComponent ]
+      declarations: [ ValidationComponent ],
+      imports:[DataModule,HttpModule]
     })
     .compileComponents();
   }));

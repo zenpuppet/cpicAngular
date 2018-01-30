@@ -1,3 +1,6 @@
 <p>
   validation works!
 </p>
+<ul>
+  <li *ngFor="let item of validations; let i = index" [attr.data-index]="i">{{item.title}}</li>
+</ul>
