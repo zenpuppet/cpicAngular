@@ -9,6 +9,7 @@ import { DictionaryComponent } from './dictionary/dictionary.component';
   imports: [
     CommonModule
   ],
-  declarations: [IssueComponent, ScheduleComponent, ValidationComponent, DictionaryComponent]
+  declarations: [IssueComponent, ScheduleComponent, ValidationComponent, DictionaryComponent],
+  exports: [IssueComponent, ScheduleComponent, ValidationComponent, DictionaryComponent]
 })
 export class ListModule { }
