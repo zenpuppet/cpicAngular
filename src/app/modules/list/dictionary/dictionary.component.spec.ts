@@ -1,6 +1,15 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { DataModule } from '../../data/data.module';
 
 import { DictionaryComponent } from './dictionary.component';
+import {
+  HttpModule,
+  Http,
+  Response,
+  ResponseOptions,
+  XHRBackend
+} from '@angular/http';
+
 
 describe('DictionaryComponent', () => {
   let component: DictionaryComponent;
@@ -8,7 +17,8 @@ describe('DictionaryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DictionaryComponent ]
+      declarations: [ DictionaryComponent ],
+      imports:[DataModule,HttpModule]
     })
     .compileComponents();
   }));
