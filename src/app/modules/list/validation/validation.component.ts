@@ -15,7 +15,7 @@ export class ValidationComponent implements OnInit {
 
   public ngOnInit() {
     // console.log(this._api);
-    this._api.loadData("./assets/data/CSVtoMongoJSON/output/bcdvalids.json").subscribe((results) => {
+    this._api.loadData("./assets/data/bcdvalids.json").subscribe((results) => {
 
         // console.log(results)
         // do stuff with our data here.
