@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ApiService } from '../../data/api.service';
 
 @Component({
@@ -9,18 +9,15 @@ import { ApiService } from '../../data/api.service';
 export class IssueComponent implements OnInit {
 
   public issues;
+  @Input() url: string;
 
   constructor(private _api: ApiService) { }
 
   public ngOnInit() {
     // console.log(this._api);
-    this._api.loadData("https://api.github.com/repos/ombegov/ITDB-schema/issues?state=open").subscribe((results) => {
+    this._api.loadData(this.url).subscribe((results) => {
 
-        console.log(results)
-        // do stuff with our data here.
-        // ....
-        // asign data to our class property in the end
-        // so it will be available to our template
+        console.log("Issues", results);
         this.issues = results
     })
 

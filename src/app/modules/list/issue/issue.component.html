@@ -1,3 +1,5 @@
-<p>
-  issue works!
-</p>
+<ul>
+  <li *ngFor="let item of issues; let i = index" [attr.data-index]="i">
+    <a href="{{item.html_url}}">{{item.title}}</a>
+  </li>
+</ul>
