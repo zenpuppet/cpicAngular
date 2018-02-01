@@ -1,6 +1,8 @@
-<p>
-  validation works!
-</p>
-<ul>
-  <li *ngFor="let item of validations; let i = index" [attr.data-index]="i">{{item.title}}</li>
-</ul>
+
+
+<div class="container">
+<div class="columns" *ngFor="let item of validations; let i = index" [attr.data-index]="i">
+  <div class="one-fifth column block-blue p-3 border">{{i}}</div>
+  <div class="four-fifths column block-blue p-3 border">{{item["Validation Description"]}}</div>
+</div><!-- react-text: 10 -->
+</div><!-- react-text: 31 -->

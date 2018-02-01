@@ -15,25 +15,18 @@ export class ValidationComponent implements OnInit {
 
   public ngOnInit() {
     // console.log(this._api);
-    this._api.loadData("https://jsonplaceholder.typicode.com/posts").subscribe((results) => {
+    this._api.loadData("./assets/data/CSVtoMongoJSON/output/bcdvalids.json").subscribe((results) => {
 
         // console.log(results)
         // do stuff with our data here.
         // ....
         // asign data to our class property in the end
         // so it will be available to our template
+        console.log("Validations", results)
+
         this.validations = results
     })
 
-    this._api.loadData("./assets/data/validations.json").subscribe((results) => {
-
-        console.log("Validations", results)
-        // do stuff with our data here.
-        // ....
-        // asign data to our class property in the end
-        // so it will be available to our template
-        // this.validations = results
-    })
 
 }
 }
