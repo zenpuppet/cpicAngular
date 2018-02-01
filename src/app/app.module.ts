@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { DataModule } from './modules/data/data.module';
 import { ListModule } from './modules/list/list.module';
 import { CoreModule } from './modules/core/core.module';
+import { JiraModule } from './modules/jira/jira.module';
 
 import { AppComponent } from './app.component';
 
@@ -18,6 +19,7 @@ import { AppComponent } from './app.component';
     DataModule,
     ListModule,
     CoreModule,
+    JiraModule,
     HttpModule
   ],
   providers: [],

@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { DataModule } from './modules/data/data.module';
 import { ListModule } from './modules/list/list.module';
 import { CoreModule } from './modules/core/core.module';
+import { JiraModule } from './modules/jira/jira.module';
 
 
 
@@ -19,6 +20,7 @@ describe('AppComponent', () => {
         DataModule,
         ListModule,
         CoreModule,
+        JiraModule,
         HttpModule
       ],
     }).compileComponents();
