@@ -1,0 +1,6 @@
+<div class="container">
+<div class="columns" *ngFor="let item of tickets; let i = index" [attr.data-index]="i">
+  <div class="one-fifth column block-blue p-3 border">{{item["Issue key"]}}</div>
+  <div class="four-fifths column block-blue p-3 border">{{item["Summary"]}}</div>
+</div><!-- react-text: 10 -->
+</div><!-- react-text: 31 -->
