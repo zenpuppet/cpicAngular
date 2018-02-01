@@ -1,7 +1,7 @@
-<header role="header"><a href="" class="site-name">CPIC</a>
+<header [class.open]="navOpen" role="header"><a href="" class="site-name">CPIC</a>
   <button (click)="navOpen = !navOpen" class="nav-toggle button-ghost">Menu<span>▾</span></button>
   <nav role="navigation">
-    <ul>
+    <ul id="nav">
       <li><a href="#schedule">Schedule</a></li>
       <li><a href="#issues">Issues</a></li>
       <li><a href="#code-links">Code Links</a></li>

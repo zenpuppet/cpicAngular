@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mainnav.component.scss']
 })
 export class MainnavComponent implements OnInit {
+  navOpen = false;
 
   constructor() { }
 
