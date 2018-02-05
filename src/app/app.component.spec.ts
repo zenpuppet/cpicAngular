@@ -1,15 +1,16 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter'; //importing the module
 
 import { DataModule } from './modules/data/data.module';
 import { ListModule } from './modules/list/list.module';
 import { CoreModule } from './modules/core/core.module';
 import { JiraModule } from './modules/jira/jira.module';
 
-
-
 import { AppComponent } from './app.component';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -21,8 +22,10 @@ describe('AppComponent', () => {
         ListModule,
         CoreModule,
         JiraModule,
-        HttpModule
-      ],
+        HttpModule,
+        FormsModule,
+        Ng2SearchPipeModule
+      ]
     }).compileComponents();
   }));
   it('should create the app', async(() => {

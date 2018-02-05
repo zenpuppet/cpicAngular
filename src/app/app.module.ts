@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
+
 import { DataModule } from './modules/data/data.module';
 import { ListModule } from './modules/list/list.module';
 import { CoreModule } from './modules/core/core.module';

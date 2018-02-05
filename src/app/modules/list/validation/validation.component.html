@@ -1,7 +1,13 @@
 
+<div>
+  <nav class="navbar">
+    <input class="form-control" type="text" name="search" [(ngModel)]="filter">
+  </nav>
+</div>
+
 
 <div class="container">
-<div class="columns" *ngFor="let item of validations; let i = index" [attr.data-index]="i">
+<div class="columns" *ngFor="let item of validations| filter:filter; let i = index" [attr.data-index]="i">
   <div class="one-fifth column block-blue p-3 border">{{i}}</div>
   <div class="four-fifths column block-blue p-3 border">{{item["Validation Description"]}}</div>
 </div><!-- react-text: 10 -->

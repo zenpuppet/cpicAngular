@@ -11,6 +11,8 @@ export class ValidationComponent implements OnInit {
 
   public validations;
 
+  public filter;
+
   constructor(private _api: ApiService) { }
 
   public ngOnInit() {
