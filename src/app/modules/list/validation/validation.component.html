@@ -12,3 +12,13 @@
   <div class="four-fifths column block-blue p-3 border">{{item["Validation Description"]}}</div>
 </div><!-- react-text: 10 -->
 </div><!-- react-text: 31 -->
+
+OLD
+<table class="table table-responsive table-bordered">
+  <tbody>
+    <tr *ngFor="let item of validations; let i = index" [attr.data-index]="i">
+      <th>{{i}}</th>
+      <td>{{item["Validation Description"]}}</td>
+    </tr>
+  </tbody>
+</table>

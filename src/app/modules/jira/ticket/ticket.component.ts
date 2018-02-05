@@ -4,7 +4,7 @@ import { ApiService } from '../../data/api.service';
 @Component({
   selector: 'app-ticket',
   templateUrl: './ticket.component.html',
-  styleUrls: ['./ticket.component.css']
+  styleUrls: ['./ticket.component.scss']
 })
 export class TicketComponent implements OnInit {
 
@@ -14,7 +14,7 @@ export class TicketComponent implements OnInit {
 
   public ngOnInit() {
     // console.log(this._api);
-    this._api.loadData("./assets/data/CSVtoMongoJSON/output/egovjira.json").subscribe((results) => {
+    this._api.loadData("./assets/data/egovjira.json").subscribe((results) => {
 
         // console.log(results)
         // do stuff with our data here.

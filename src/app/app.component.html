@@ -1,40 +1,27 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<cpic-mainnav class="on-dark"></cpic-mainnav>
 
-<cpic-mainnav></cpic-mainnav>
+<main role="main" class="grid constrained padded-top-bottom grid-gap-col grid-gap-row">
 
-<div class="container-lg clearfix">
+  <section>
+    <h1 class="major">Welcome to {{ title }}!</h1>
+    <p>Walrus felis hairy kid at school des lynam, walrus handsome leader of men des lynam lady magnets groucho-a-like walrus hairy kid at school felis, groucho-a-like leader of men handsome educated rugged et walrus toothbrush lady magnets dickie davies walrus felis give him what-for des lynam tony stark groomed hairy kid at school.</p>
+    <p>Challenge you to a duel I drink your milkshake facial accessory arcu will you do the fandango ding-dong top gun fox hunting? Mark lawrenson elit godlike French café patron louis xiii?</p>
+    <p>Ian botham hello, we’re cockneys spaghetti western, ian botham hello, we’re cockneys sam elliott spaghetti western bruce forsyth knavish rogue prince barin beefeater.</p>
+  </section>
 
-<h1>
-  Welcome to {{ title }}!
-</h1>
-<p>
-  Walrus felis hairy kid at school des lynam, walrus handsome leader of men des lynam lady magnets groucho-a-like walrus hairy kid at school felis, groucho-a-like leader of men handsome educated rugged et walrus toothbrush lady magnets dickie davies walrus felis give him what-for des lynam tony stark groomed hairy kid at school.
-
-  Challenge you to a duel I drink your milkshake facial accessory arcu will you do the fandango ding-dong top gun fox hunting? Mark lawrenson elit godlike French café patron louis xiii?
-
-  Ian botham hello, we’re cockneys spaghetti western, ian botham hello, we’re cockneys sam elliott spaghetti western bruce forsyth knavish rogue prince barin beefeater.
-</p>
-</div>
-
-<div class="container-lg clearfix">
-<div class="d-table col-12">
-  <div class="col-4 d-table-cell  p-4 mb-3">
-    <h2>Schedule</h2>
+  <section id="schedule" class="g-m-4">
+    <h1>Schedule</h1>
     <app-schedule></app-schedule>
-  </div>
-  <div class="col-4 d-table-cell  p-4">
-    <h2>Issues</h2>
+  </section>
+
+  <section id="issues" class="g-m-4">
+    <h1>Issues</h1>
     <app-issue url="https://api.github.com/repos/ombegov/ITDB-schema/issues?state=open"></app-issue>
-  </div>
-  <div class="col-4 d-table-cell  p-4">
-    <h2>Code Links</h2>
-  </div>
-  </div>
-</div>
+  </section>
 
-
-
-
+  <section id="code-links" class="g-m-4">
+    <h1>Code Links</h1>
+  </section>
 
 <div class="container-lg clearfix">
   <h2>Validations</h2>
@@ -73,21 +60,9 @@
     </div><!-- react-text: 16 -->
   <!-- /react-text --></div><!-- react-text: 17 -->
 
-  <!-- /react-text --><div class="columns mb-1"><!-- react-text: 19 -->
-    <!-- /react-text --><div class="one-third column block-blue p-3 border">
-      .one-third
-    </div><!-- react-text: 21 -->
-    <!-- /react-text --><div class="two-thirds column block-blue p-3 border">
-      .two-thirds
-    </div><!-- react-text: 23 -->
-  <!-- /react-text --></div><!-- react-text: 24 -->
+  <section id="jira-board">
+    <h1 class="major hr">Jira Board</h1>
+    <app-ticket></app-ticket>
+  </section>
 
-  <!-- /react-text --><div class="columns"><!-- react-text: 26 -->
-    <!-- /react-text --><div class="one-half column block-blue p-3 border">
-      .one-half
-    </div><!-- react-text: 28 -->
-    <!-- /react-text --><div class="one-half column block-blue p-3 border">
-      .one-half
-    </div><!-- react-text: 30 -->
-  <!-- /react-text --></div><!-- react-text: 31 -->
-<!-- /react-text --></div>
+</main>
