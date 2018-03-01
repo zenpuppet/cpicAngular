@@ -22,10 +22,11 @@
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
-    "ng2-search-filter": "^0.3.1",
     "css-reset-and-normalize-sass": "^0.1.2",
+    "ng2-search-filter": "^0.3.1",
     "node-excel-to-json": "0.0.3",
     "rxjs": "^5.5.6",
+    "typings": "^2.1.1",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
