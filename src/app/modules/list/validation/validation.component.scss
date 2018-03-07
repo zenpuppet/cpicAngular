@@ -1,0 +1,21 @@
+@import 'modules/directives';
+@import 'modules/settings';
+
+.form-filter {
+  background-color: $color-neutral-background;
+  border: $border-base;
+  padding: $space-m;
+
+  @include breakpoint(s) {
+    border-bottom-width: 0;
+  }
+
+  label {
+    color: $color-base-header;
+
+    @include breakpoint(m) {
+      padding-right: $space-m;
+      text-align: right;
+    }
+  }
+}

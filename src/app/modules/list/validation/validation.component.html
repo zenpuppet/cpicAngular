@@ -1,7 +1,10 @@
 <article>
   <section>
     <h1>Validations</h1>
-    <input class="form-control" type="text" name="search" [(ngModel)]="filter">
+    <form class="form-filter grid">
+      <label for="filter" class="g-m-6">Filter Validations</label>
+      <input class="g-m-6" type="text" name="filter" [(ngModel)]="filter">
+    </form>
     <table class="table table-responsive table-bordered">
       <tbody>
         <tr *ngFor="let item of validations| filter:filter; let i = index" [attr.data-index]="i">

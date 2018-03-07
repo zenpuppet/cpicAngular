@@ -3,7 +3,7 @@
     <h1>Issues</h1>
     <ul>
       <li *ngFor="let item of issues; let i = index" [attr.data-index]="i">
-        <a href="{{item.html_url}}">{{item.title}}</a>
+        <a href="{{item.html_url}}" target="_blank">{{item.title}}</a>
       </li>
     </ul>
   </section>
