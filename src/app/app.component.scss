@@ -1,12 +1,2 @@
 @import 'modules/directives';
 @import 'modules/settings';
-
-main {
-  padding-left: $space-m;
-  padding-right: $space-m;
-
-  @include breakpoint(1240) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}

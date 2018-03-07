@@ -1,70 +1,30 @@
 <cpic-mainnav class="on-dark"></cpic-mainnav>
+<main role="main">
+  <router-outlet></router-outlet>
+</main>
 
-<main role="main" class="grid constrained padded-top-bottom grid-gap-col grid-gap-row">
-
-  <section>
-    <h1 class="major">Welcome to {{ title }}!</h1>
-    <p>Walrus felis hairy kid at school des lynam, walrus handsome leader of men des lynam lady magnets groucho-a-like walrus hairy kid at school felis, groucho-a-like leader of men handsome educated rugged et walrus toothbrush lady magnets dickie davies walrus felis give him what-for des lynam tony stark groomed hairy kid at school.</p>
-    <p>Challenge you to a duel I drink your milkshake facial accessory arcu will you do the fandango ding-dong top gun fox hunting? Mark lawrenson elit godlike French café patron louis xiii?</p>
-    <p>Ian botham hello, we’re cockneys spaghetti western, ian botham hello, we’re cockneys sam elliott spaghetti western bruce forsyth knavish rogue prince barin beefeater.</p>
-  </section>
-
-  <section id="schedule" class="g-m-4">
+<!--
+  <section id="schedule">
     <h1>Schedule</h1>
     <app-schedule></app-schedule>
   </section>
 
-  <section id="issues" class="g-m-4">
+  <section id="issues">
     <h1>Issues</h1>
     <app-issue url="https://api.github.com/repos/ombegov/ITDB-schema/issues?state=open"></app-issue>
   </section>
 
-  <section id="code-links" class="g-m-4">
+  <section id="code-links">
     <h1>Code Links</h1>
   </section>
 
-<div class="container-lg clearfix">
-  <h2>Validations</h2>
-</div>
-
-<div class="container-lg clearfix">
-<div class="d-table col-12">
-
-<app-validation></app-validation>
-</div>
-</div>
-<hr>
-<div class="container-lg clearfix">
-  <h2>Jira Board</h2>
-</div>
-<app-ticket></app-ticket>
-
-<div class="container">
-  <!-- /react-text --><div class="columns gutter-md-spacious mb-1">
-    <!-- /react-text --><div class="one-third column block-blue p-3 border">
-    <h2>Schedule</h2>
-    <app-schedule></app-schedule>
-    </div><!-- react-text: 7 -->
-    <!-- /react-text --><div class="one-third column block-blue p-3 border">
-    <h2>Issues</h2>
-    <app-issue url="https://api.github.com/repos/ombegov/ITDB-schema/issues?state=all"></app-issue>
-    </div><!-- react-text: 9 -->
-  <!-- /react-text --></div><!-- react-text: 10 -->
-
-  <!-- /react-text --><div class="columns mb-1"><!-- react-text: 12 -->
-    <!-- /react-text --><div class="one-fourth column block-blue p-3 border">
-      .one-fourth
-    </div><!-- react-text: 14 -->
-    <!-- /react-text --><div class="three-fourths column block-blue p-3 border">
-      .three-fourths
-    </div><!-- react-text: 16 -->
-  <!-- /react-text --></div><!-- react-text: 17 -->
-
-  <section id="jira-board">
-    <h1 class="major hr">Jira Board</h1>
-    <app-ticket></app-ticket>
+  <section id="validations">
+    <h1>Validations</h1>
+    <app-validation></app-validation>
   </section>
 
-</div>
-
-</main>
+  <section id="jira">
+    <h1>Jira Board</h1>
+    <app-ticket></app-ticket>
+  </section>
+-->

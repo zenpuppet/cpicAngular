@@ -16,11 +16,15 @@ body {
   > app-root {
     display: grid;
     grid-template-areas:
-      'header'
-      'content'
-      'footer';
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+      'nav'
+      'main';
+    grid-template-rows: auto auto;
+
+    @include breakpoint(l) {
+      grid-template-areas: 'nav main';
+      grid-template-columns: 15% 1fr;
+      min-height: 100vh;
+    }
   }
 }
 
@@ -181,11 +185,6 @@ button,
   }
 }
 
-cpic-mainnav > *,
-main {
-  @include constrained;
-}
-
 h1,
 h2,
 h3,
@@ -288,6 +287,32 @@ h6,
 
 label {
   cursor: pointer;
+}
+
+main article {
+  display: grid;
+  grid-template-areas:
+  'component'
+  'detail';
+  grid-template-columns: auto;
+  min-height: 100vh;
+
+  @include breakpoint(m) {
+    grid-template-areas:
+      'component detail';
+    grid-template-columns: 50% 50%;
+    min-height: 100vh;
+  }
+
+  > section {
+    padding: $space-m;
+  }
+
+  > aside {
+    background-color: $color-dark-background-highlight;
+    color: $color-dark-text;
+    padding: $space-m;
+  }
 }
 
 p,

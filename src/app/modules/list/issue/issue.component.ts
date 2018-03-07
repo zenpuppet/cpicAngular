@@ -9,7 +9,7 @@ import { ApiService } from '../../data/api.service';
 export class IssueComponent implements OnInit {
 
   public issues;
-  @Input() url: string;
+  url = 'https://api.github.com/repos/ombegov/ITDB-schema/issues?state=open';
 
   constructor(private _api: ApiService) { }
 
@@ -18,8 +18,8 @@ export class IssueComponent implements OnInit {
     this._api.loadData(this.url).subscribe((results) => {
 
         console.log("Issues", results);
-        this.issues = results
-    })
+        this.issues = results;
+    });
 
 }
 }

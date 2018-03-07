@@ -1,8 +1,14 @@
-<table class="table table-responsive table-bordered">
-  <tbody>
-    <tr *ngFor="let item of tickets; let i = index" [attr.data-index]="i">
-      <th>{{item["Issue key"]}}</th>
-      <td>{{item["Summary"]}}</td>
-    </tr>
-  </tbody>
-</table>
+<article>
+  <section>
+    <h1>Jira Board</h1>
+    <table class="table table-responsive table-bordered">
+      <tbody>
+        <tr *ngFor="let item of tickets; let i = index" [attr.data-index]="i">
+          <th>{{item["Issue key"]}}</th>
+          <td>{{item["Summary"]}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <aside></aside>
+</article>
