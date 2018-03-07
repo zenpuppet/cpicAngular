@@ -1,1 +1,0 @@
-[{"_id":{"$oid":"edbab45572c72a5d9440b40b"},"att_b1":"test1b","objectA_id":{"$oid":"8a8bb7cd343aa2ad99b7d762"}},{"_id":{"$oid":"fbfba2e45c2045dc5cab22a5"},"att_b1":"test2b","objectA_id":{"$oid":"693a9fdd4c2fd0700968fba0"}},{"_id":{"$oid":"7a6f150b83091ce20c893686"},"att_b1":"test3b","objectA_id":{"$oid":"9d607a663f3e9b0a90c3c8d4"}}]
