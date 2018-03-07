@@ -285,6 +285,10 @@ h6,
   font-size: $font-size-h6;
 }
 
+input {
+  border: $border-base;
+}
+
 label {
   cursor: pointer;
 }
@@ -304,6 +308,18 @@ main article {
     min-height: 100vh;
   }
 
+  > section,
+  > aside {
+    > h1:first-child {
+      background-color: $color-neutral-background;
+      border-bottom: $border-base;
+      font-size: $font-size-xl;
+      line-height: 60px;
+      margin: (-$space-m) (-$space-m) $space-m;
+      padding: 0 $space-m;
+    }
+  }
+
   > section {
     padding: $space-m;
   }
@@ -312,6 +328,11 @@ main article {
     background-color: $color-dark-background-highlight;
     color: $color-dark-text;
     padding: $space-m;
+
+    > h1:first-child {
+      background-color: $color-dark-background-alt;
+      color: $color-dark-text;
+    }
   }
 }
 
